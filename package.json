@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "test": "npx markdownlint chapters/*.md > tests/markdownlint_report.txt && npx cspell chapters/*.md > tests/cspell_report.txt && npx markdown-link-check chapters/05_Further_Reading.md > tests/linkcheck_report.txt"
+  },
+  "devDependencies": {
+    "cspell": "^9.1.1",
+    "markdown-link-check": "^3.13.7",
+    "markdownlint-cli": "^0.45.0"
+  }
+}

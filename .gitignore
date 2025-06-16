@@ -1,0 +1,5 @@
+# Ignore generated reports and node_modules in the tests directory
+tests/markdownlint_report.txt
+tests/cspell_report.txt
+tests/linkcheck_report.txt
+tests/node_modules/ 
