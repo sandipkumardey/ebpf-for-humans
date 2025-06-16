@@ -1,4 +1,8 @@
-# Ignore generated reports and node_modules in the tests directory
+node_modules/
+drafts/
+.DS_Store
+
+# Ignore generated reports
 tests/markdownlint_report.txt
 tests/cspell_report.txt
 tests/linkcheck_report.txt
