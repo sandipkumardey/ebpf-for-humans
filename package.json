@@ -1,6 +1,28 @@
 {
+  "name": "ebpf-for-humans",
+  "version": "1.0.0",
+  "description": "A comprehensive guide to eBPF and Cilium for humans",
+  "main": "README.md",
   "scripts": {
-    "test": "npx markdownlint chapters/*.md > tests/markdownlint_report.txt 2>&1 && npx cspell chapters/*.md > tests/cspell_report.txt && npx markdown-link-check chapters/05_Further_Reading.md > tests/linkcheck_report.txt"
+    "test": "npx markdownlint chapters/*.md > tests/markdownlint_report.txt 2>&1 && npx cspell chapters/*.md > tests/cspell_report.txt && npx markdown-link-check chapters/05_Further_Reading.md > tests/linkcheck_report.txt",
+    "setup": "bash setup_tests.sh",
+    "clean": "rm -rf tests/*.txt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandipkumardey/ebpf-for-humans.git"
+  },
+  "keywords": [
+    "ebpf",
+    "cilium",
+    "linux",
+    "networking",
+    "documentation"
+  ],
+  "author": "Sandip Kumar Dey",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
   },
   "devDependencies": {
     "cspell": "^9.1.1",
